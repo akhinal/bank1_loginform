@@ -12,30 +12,30 @@
                 <form id="d">
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example3cg" class="form-control form-control-lg" placeholder="Account Number"/>
+                    <input [(ngModel)]="acno" type="text" id="w1" name="k1" class="form-control form-control-lg" placeholder="Account Number"/>
                     
                   </div>
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example3cg" class="form-control form-control-lg" placeholder="User Name"/>
+                <input [(ngModel)]="uname" type="text" id="w2" name="k2"  class="form-control form-control-lg" placeholder="User Name"/>
                 
               </div>
 
               <div class="form-outline mb-4">
-                <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Password"/>
+                <input [(ngModel)]="psw" type="password" id="w3" name="k3" class="form-control form-control-lg" placeholder="Password"/>
                 
               </div>
 
               <div class="form-outline mb-4">
-                <input type="password" id="form3Example4cdg" class="form-control form-control-lg" placeholder="Confirm Password"/>
+                <input [(ngModel)]="cpsw" type="password" id="w4" name="k4"  class="form-control form-control-lg" placeholder="Confirm Password"/>
                 
               </div>
 
              
 
               <div class="d-flex justify-content-center">
-                <button type="button"
-                  class="btn btn-info btn-block btn-lg gradient-custom-4 text-body "><strong class="text-light">Register</strong></button>
+                <button (click)="signup()" type="button" 
+                   class="btn btn-info btn-block btn-lg gradient-custom-4 text-body "><strong class="text-light">Register</strong></button>
               </div>
 
               <p class="text-center text-muted mt-5 mb-0 "><strong class="text-light">Have already an account? </strong><a href="#!"
