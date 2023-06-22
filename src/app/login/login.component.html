@@ -11,10 +11,10 @@
                             <input type="email" id="email" class="form-control" placeholder="Email">
                         </div> -->
                         <div class="mb-3">
-                            <input  type="text" id="uname" class="form-control"  [placeholder]="pdata">
+                            <input [(ngModel)]="accno" type="text" id="uname" name="u1" class="form-control"  [placeholder]="pdata">
                         </div>
                         <div class="mb-3">
-                            <input type="password" id="pswd" class="form-control" placeholder="Password">
+                            <input [(ngModel)]="psw" type="password" id="pswd" name="p1" class="form-control" placeholder="Password">
                         </div>
                         <div class="text-center d-grid gap-2">
                             <button (click)="login()" type="submit" class="btn btn-primary mt-4 pt-2" >Login</button>
